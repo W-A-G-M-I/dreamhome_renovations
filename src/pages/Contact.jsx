@@ -1,9 +1,13 @@
-import React from "react";
-import MainLayout from "../components/_layout/MainLayout";
+import React, { useState } from "react";
+import Modal from "../components/_common/Modal";
+import { MenuIcon } from "../components/_common";
 
 const Contact = () => {
+  const [isNavShowing, setNavShowing] = useState(false);
   return (
-      <h1 className="text-tea font-heading">Contact US</h1>
+       <Modal show={isNavShowing} toggleShow={() => setNavShowing(prev => !prev)}>
+        <Modal.Trigger trigger={MenuIcon} />
+      </Modal>
   );
 };
 
