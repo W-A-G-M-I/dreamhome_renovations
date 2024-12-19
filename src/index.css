@@ -113,5 +113,5 @@
 }
 
 .btn__stroke--active {
-  @apply block absolute left-1/2 border-white -translate-x-1/2 top-1/2 -translate-y-1/2 w-7;
+  @apply block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-7;
 }

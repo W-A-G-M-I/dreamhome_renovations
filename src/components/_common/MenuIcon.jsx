@@ -1,6 +1,6 @@
 const MenuIcon = ({ toggleShow, show }) => {
   return (
-    <div className="btn__menu" onClick={toggleShow}>
+    <button className="btn__menu" onClick={toggleShow}>
       <span
         className={`btn__stroke ${show && "btn__stroke--active -rotate-45"}`}
       />
@@ -8,7 +8,7 @@ const MenuIcon = ({ toggleShow, show }) => {
       <span
         className={`btn__stroke ${show && "btn__stroke--active rotate-45"}`}
       />
-    </div>
+    </button>
   );
 };
 
