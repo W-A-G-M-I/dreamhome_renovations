@@ -7,17 +7,17 @@ const Modal = ({ children, show, toggleShow }) => {
     return isChild ? child : null;
   });
 
-  // const displaySubComponents = () => {
-  //   return subComponents.map((component) => {
-  //     const isValidElement = React.isValidElement(component);
-  //     return (
-  //       isValidElement && React.cloneElement(component, { show, toggleShow })
-  //     );
-  //   });
-  // };
+  const displaySubComponents = () => {
+    return subComponents.map((component) => {
+      const isValidElement = React.isValidElement(component);
+      return (
+        isValidElement && React.cloneElement(component, { show, toggleShow })
+      );
+    });
+  };
 
-  // return <>{displaySubComponents()}</>;
-  return <>{subComponents.map(component => component)}</>
+  return <>{displaySubComponents()}</>;
+  // return <>{subComponents.map(component => component)}</>
 };
 
 const Trigger = ({ trigger: Trigger, toggleShow, show }) => {
