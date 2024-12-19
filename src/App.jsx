@@ -1,8 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import MainLayout from "./components/_layout/MainLayout";
+import { About, Contact, Home } from "./pages";
+
 const App = () => {
   return (
-    <section className="flex-center h-screen">
-      <h1 className="text-3xl font-heading text-tea">Welcome to Dream House Renovations</h1>
-    </section>
+    <MainLayout>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </MainLayout>
   );
 };
 

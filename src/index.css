@@ -1,70 +1,70 @@
 :root {
-  --color_0: rgb(255,255,255);
-  --color_1: rgb(30,30,30);
-  --color_2: rgb(180,106,44);
-  --color_3: rgb(105,102,102);
-  --color_4: rgb(245,245,245);
-  --color_5: 250,232,219;
-  --color_6: 255,255,255;
-  --color_7: 199,199,199;
-  --color_8: 143,143,143;
-  --color_9: 86,86,86;
-  --color_10: 30,30,30;
-  --color_11: 245,245,245;
-  --color_12: 219,219,219;
-  --color_13: 143,143,143;
-  --color_14: 86,86,86;
-  --color_15: 30,30,30;
-  --color_16: rgb(236,205,178);
-  --color_17: rgb(218,155,102);
-  --color_18: rgb(162,96,40);
-  --color_19: 120,71,29;
-  --color_20: 60,35,15;
-  --color_21: 148,255,97;
-  --color_22: 127,227,79;
-  --color_23: 100,179,62;
-  --color_24: 80,143,50;
-  --color_25: 56,99,35;
-  --color_26: 87,194,255;
-  --color_27: 54,164,227;
-  --color_28: 34,121,171;
-  --color_29: 22,84,120;
-  --color_30: 13,52,74;
-  --color_31: 252,139,139;
-  --color_32: 252,53,53;
-  --color_33: 201,40,40;
-  --color_34: 150,24,24;
-  --color_35: 103,14,14;
-  --color_36: 245,245,245;
-  --color_37: 30,30,30;
-  --color_38: 219,219,219;
-  --color_39: 143,143,143;
-  --color_40: 86,86,86;
-  --color_41: 162,96,40;
-  --color_42: 120,71,29;
-  --color_43: 143,143,143;
-  --color_44: 245,245,245;
-  --color_45: 30,30,30;
-  --color_46: 30,30,30;
-  --color_47: 86,86,86;
-  --color_48: 162,96,40;
-  --color_49: 162,96,40;
-  --color_50: 245,245,245;
-  --color_51: 245,245,245;
-  --color_52: 162,96,40;
-  --color_53: 162,96,40;
-  --color_54: 143,143,143;
-  --color_55: 143,143,143;
-  --color_56: 245,245,245;
-  --color_57: 245,245,245;
-  --color_58: 162,96,40;
-  --color_59: 162,96,40;
-  --color_60: 162,96,40;
-  --color_61: 162,96,40;
-  --color_62: 245,245,245;
-  --color_63: 245,245,245;
-  --color_64: 143,143,143;
-  --color_65: 143,143,143;
+  --color_0: rgb(255, 255, 255);
+  --color_1: rgb(30, 30, 30);
+  --color_2: 180, 106, 44;
+  --color_3: 105, 102, 102;
+  --color_4: 245, 245, 245;
+  --color_5: 250, 232, 219;
+  --color_6: 255, 255, 255;
+  --color_7: 199, 199, 199;
+  --color_8: 143, 143, 143;
+  --color_9: 86, 86, 86;
+  --color_10: 30, 30, 30;
+  --color_11: 245, 245, 245;
+  --color_12: 219, 219, 219;
+  --color_13: 143, 143, 143;
+  --color_14: 86, 86, 86;
+  --color_15: 30, 30, 30;
+  --color_16: 236, 205, 178;
+  --color_17: 218, 155, 102;
+  --color_18: rgb(162, 96, 40);
+  --color_19: 120, 71, 29;
+  --color_20: 60, 35, 15;
+  --color_21: 148, 255, 97;
+  --color_22: 127, 227, 79;
+  --color_23: 100, 179, 62;
+  --color_24: 80, 143, 50;
+  --color_25: 56, 99, 35;
+  --color_26: 87, 194, 255;
+  --color_27: 54, 164, 227;
+  --color_28: 34, 121, 171;
+  --color_29: 22, 84, 120;
+  --color_30: 13, 52, 74;
+  --color_31: 252, 139, 139;
+  --color_32: 252, 53, 53;
+  --color_33: 201, 40, 40;
+  --color_34: 150, 24, 24;
+  --color_35: 103, 14, 14;
+  --color_36: 245, 245, 245;
+  --color_37: 30, 30, 30;
+  --color_38: 219, 219, 219;
+  --color_39: 143, 143, 143;
+  --color_40: 86, 86, 86;
+  --color_41: 162, 96, 40;
+  --color_42: 120, 71, 29;
+  --color_43: 143, 143, 143;
+  --color_44: 245, 245, 245;
+  --color_45: 30, 30, 30;
+  --color_46: 30, 30, 30;
+  --color_47: 86, 86, 86;
+  --color_48: 162, 96, 40;
+  --color_49: 162, 96, 40;
+  --color_50: 245, 245, 245;
+  --color_51: 245, 245, 245;
+  --color_52: 162, 96, 40;
+  --color_53: 162, 96, 40;
+  --color_54: 143, 143, 143;
+  --color_55: 143, 143, 143;
+  --color_56: 245, 245, 245;
+  --color_57: 245, 245, 245;
+  --color_58: 162, 96, 40;
+  --color_59: 162, 96, 40;
+  --color_60: 162, 96, 40;
+  --color_61: 162, 96, 40;
+  --color_62: 245, 245, 245;
+  --color_63: 245, 245, 245;
+  --color_64: 143, 143, 143;
+  --color_65: 143, 143, 143;
 }
 
 @tailwind base;
@@ -88,22 +88,6 @@
     font-family: "pop-semibold";
     src: url("./assets/fonts/Poppins-SemiBold.ttf");
   }
-  /* @font-face {
-    font-family: "DMSansBold";
-    src: url("./assets/fonts/DMSansBold.ttf");
-  }
-  @font-face {
-    font-family: "DMSansMedium";
-    src: url("./assets/fonts/DMSansMedium.ttf");
-  }
-  @font-face {
-    font-family: "DMSansRegular";
-    src: url("./assets/fonts/DMSansRegular.ttf");
-  }
-  @font-face {
-    font-family: "DMSansSemiBold";
-    src: url("./assets/fonts/DMSansSemiBold.ttf");
-  } */
 }
 
 @layer utilities {
@@ -114,4 +98,20 @@
   .flex-apart {
     @apply flex items-center justify-between;
   }
+}
+
+/* .btn {
+  @apply cursor-pointer
+} */
+
+.btn__menu {
+  @apply size-10 flex-apart flex-col relative py-3 md:hidden;
+}
+
+.btn__stroke {
+  @apply border-[1.5px] w-6 border-charcoal block transition-all duration-500;
+}
+
+.btn__stroke--active {
+  @apply block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-7;
 }
