@@ -10,6 +10,7 @@ export default {
       colors: {
         tea: "var(--color_18)",
         charcoal: "var(--color_1)",
+        ash: 'var(--color_3)'
       },
     },
   },

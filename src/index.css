@@ -1,8 +1,8 @@
 :root {
   --color_0: rgb(255, 255, 255);
   --color_1: rgb(30, 30, 30);
-  --color_2: 180, 106, 44;
-  --color_3: 105, 102, 102;
+  /* --color_2: rgb(180, 106, 44); */
+  --color_3: rgb(105, 102, 102);
   --color_4: 245, 245, 245;
   --color_5: 250, 232, 219;
   --color_6: 255, 255, 255;
@@ -105,7 +105,7 @@
 } */
 
 .btn__menu {
-  @apply size-10 flex-apart flex-col relative py-3 md:hidden;
+  @apply size-10 flex-apart flex-col absolute top-1/2 -translate-y-1/2 z-50 right-4 py-3 md:hidden;
 }
 
 .btn__stroke {
@@ -113,5 +113,5 @@
 }
 
 .btn__stroke--active {
-  @apply block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-7;
+  @apply block absolute left-1/2 border-white -translate-x-1/2 top-1/2 -translate-y-1/2 w-7;
 }
