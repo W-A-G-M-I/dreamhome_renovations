@@ -6,11 +6,10 @@ const MobileNav = () => {
 const [isNavShowing, setNavShowing] = useState(false);
 
   return (
-    <MenuIcon/>
-  //  <Modal show={isNavShowing} toggleShow={() => setNavShowing(prev => !prev)}>
-  //   <Modal.Trigger trigger={MenuIcon} />
-  //   <Modal.Backdrop />
-  //  </Modal>
+   <Modal show={isNavShowing} toggleShow={() => setNavShowing(prev => !prev)}>
+    <Modal.Trigger trigger={MenuIcon} />
+    {/* <Modal.Backdrop /> */}
+   </Modal>
   )
 }
 
