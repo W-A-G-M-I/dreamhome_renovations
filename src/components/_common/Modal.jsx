@@ -17,7 +17,6 @@ const Modal = ({ children, show, toggleShow }) => {
   };
 
   return <>{displaySubComponents()}</>;
-  // return <>{subComponents.map(component => component)}</>
 };
 
 const Trigger = ({ trigger: Trigger, toggleShow, show }) => {

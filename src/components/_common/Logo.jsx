@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Logo = ({ containerStyle }) => {
   return (
-    <div className={containerStyle}>
+    <Link to="/" className={containerStyle}>
       <svg
         preserveAspectRatio="xMidYMid meet"
         data-bbox="20.25 31.386 160 135.979"
@@ -27,7 +28,7 @@ const Logo = ({ containerStyle }) => {
           ></path>
         </g>
       </svg>
-    </div>
+    </Link>
   );
 };
 
