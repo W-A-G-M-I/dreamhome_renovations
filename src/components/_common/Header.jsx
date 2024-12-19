@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 const Header = () => {
   return (
     <header className="px-4 md:px-12 h-20 border flex-apart relative">
-      <div className="flex items-end">
+      <div className="flex items-end border-4">
         <Logo containerStyle="w-9 h-8" />
         <h1 className="text-xl font-heading ms-1 text-charcoal">
           <span className="md:hidden">DHR</span>
