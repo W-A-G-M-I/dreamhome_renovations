@@ -1,7 +1,14 @@
 import React from "react";
+import Form from "../components/contact/form/Form";
+import Discuss from "../components/contact/discuss/Discuss";
 
 const Contact = () => {
-  return <h1 className="text-tea font-heading">Contact US</h1>;
+  return (
+    <section>
+      <Discuss />
+      <Form />
+    </section>
+  );
 };
 
 export default Contact;
