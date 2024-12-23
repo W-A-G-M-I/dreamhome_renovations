@@ -1,0 +1,33 @@
+/* the first section which is "discuss" */
+.discuss {
+    width: 50%;
+    display: block;
+}
+
+/* Let's Discuss Your Next Project*/
+.header {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* section is used here to separate the header and paragraph */
+section {
+    margin-top: 30px;
+}
+
+/* to make the text block */
+span {
+    display: block;
+}
+
+/* service areas */
+.service-areas {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* the last three paragraph */
+.three, .four, .five {
+    margin: 15px 0;
+}
