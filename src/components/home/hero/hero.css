@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "poppinsSemiBold";
+  src: url("../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsBold";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsExtraLight";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsMedium";
+  src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsRegular";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.hero {
+  height: 920px;
+  width: 100%;
+  margin-top: 140px;
+  background-color: rgb(var(--color_36));
+  position: relative;
+}
+
+.hero .image {
+  margin: 0 auto;
+  width: 90%;
+  height: 860px;
+  background-color: rgba(30, 30, 30, 0.6);
+  background-image: url(../assets/heroImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.hero .text {
+  width: 820px;
+  height: auto;
+  position: relative;
+  left: 60px;
+  transform: translate(0, 75%);
+}
+
+.text a {
+  outline: none;
+  border: solid 1px transparent;
+  background-color: rgb(var(--color_11));
+  cursor: pointer;
+  width: 185px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.semiBold {
+  font-family: "poppinsSemiBold";
+}
+
+.extraLight {
+  font-family: "poppinsExtraLight";
+}
+
+.c-15 {
+  color: rgb(var(--color_15));
+}
+
