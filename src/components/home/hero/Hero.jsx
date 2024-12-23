@@ -6,13 +6,12 @@ const Hero = () => {
     <div className="hero">
       <div className="image">
         <div className="text">
-          <h1 class="semiBold text-[72px] text-[rgb(245,245,245)] mb-[70px]">
+          <h1 className="font-heading text-[72px] text-faint mb-[70px]">
             Exceptional Home Remodeling & Renovations
           </h1>
-          <a href="#" target="_blank">
-            <span class="extraLight text-[14px] text-[rgb(30,30,30)]">
-              Get A Free Estimate
-            </span>
+
+          <a href="#" target="_blank" className="text-sm text-charcoal">
+            Get A Free Estimate
           </a>
         </div>
       </div>

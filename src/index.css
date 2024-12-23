@@ -35,7 +35,7 @@
   --color_33: 201, 40, 40;
   --color_34: 150, 24, 24;
   --color_35: 103, 14, 14;
-  --color_36: 245, 245, 245;
+  --color_36: rgb(245, 245, 245);
   --color_37: 30, 30, 30;
   --color_38: 219, 219, 219;
   --color_39: 143, 143, 143;
@@ -72,21 +72,24 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
+  /* @font-face {
     font-family: "pop-bold";
     src: url("./assets/fonts/Poppins-Bold.ttf");
-  }
+  } */
   @font-face {
     font-family: "pop-light";
     src: url("./assets/fonts/Poppins-ExtraLight.ttf");
   }
-  @font-face {
+  /* @font-face {
     font-family: "pop-regular";
     src: url("./assets/fonts/Poppins-Regular.ttf");
-  }
+  } */
   @font-face {
     font-family: "pop-semibold";
     src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  }
+  body {
+    @apply bg-faint
   }
 }
 
