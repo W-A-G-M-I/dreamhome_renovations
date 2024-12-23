@@ -5,7 +5,7 @@ const Discuss = () => {
   return <div className="discuss">
     <header className="header">Let's Discuss <span>Your Next Project</span></header>
     <section>
-      <p className="one">Fill out the form or cal us to<span>set up a free in-home consultation</span></p>
+      <p className="one">Fill out the form or call us to<span>set up a free in-home consultation</span></p>
       <header className="service-areas">Service Areas:</header>
       <p className="two">San Francisco, Santa Clara, Alameda, San Mateo</p>
       <p className="three">500 Terry Francine Street San </p>
