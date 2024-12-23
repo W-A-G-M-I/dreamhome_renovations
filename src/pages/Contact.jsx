@@ -1,11 +1,10 @@
 import React from "react";
 import Form from "../components/contact/form/Form";
 import Discuss from "../components/contact/discuss/Discuss";
-import './contact.css'
 
 const Contact = () => {
   return (
-    <section className="flex-box">
+    <section className="flex">
       <Discuss />
       <Form />
     </section>
