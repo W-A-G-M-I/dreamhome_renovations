@@ -1,0 +1,9 @@
+.imageWrap {
+  background-image: url(../../../assets/images/kitchenImage.png);
+}
+.imageWrap:nth-child(2) {
+  background-image: url(../../../assets/images//bedroomImage.png);
+}
+.imageWrap:last-child {
+  background-image: url(../../../assets/images//interiorImage.png);
+}

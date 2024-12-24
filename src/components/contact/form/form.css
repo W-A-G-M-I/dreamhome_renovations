@@ -1,10 +1,12 @@
 /* the second section which is the form part*/
-.form {
+.form_lai {
     width: 50%;
     margin-left: 50px;
 }
 
-input {
+#name_lai, #email_lai, #number_lai,
+#address_lai, #subject_lai, #message_lai,
+    #submit_lai {
     display: block;
     border: none;
     outline: none;
@@ -15,21 +17,25 @@ input {
 }
 
 /* To increase size of border-bottom of name, email & number */
-#name, #email, #number {
+#name_lai, #email_lai, #number_lai {
     width: 200px;
 }
 
 /* This is to put the first name & Second name, email & phone on the same line (flex) */
-.flex-form {
+.flex-form_lai {
     display: flex;
+<<<<<<< HEAD
+=======
+    column-gap: 20px;
+>>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
 }
 
 /* To increase size of border-bottom of name, subject & message */
-#address, #subject, textarea {
+#address_lai, #subject_lai, #message_lai {
     width: 425px;
 }
 
-textarea {
+#message_lai {
     border: none;
     border-bottom: 1px solid black;
     display: block;
@@ -40,7 +46,7 @@ textarea {
 }
 
 /* the button */
-#submit {
+#submit_lai {
     background-color: #000;
     color: white;
     width: 425px;
@@ -49,7 +55,7 @@ textarea {
     border: none;
 }
 
-#submit:hover {
+#submit_lai:hover {
     background-color: rgb(126, 52, 9);
     color: #fff;
 }
@@ -61,6 +67,7 @@ textarea {
 
 
 @media (max-width: 600px) {
+<<<<<<< HEAD
     .form {
         width: 100%;
         margin: 150px 0 0 15px;
@@ -72,11 +79,25 @@ textarea {
         display: block;
     }
     .flex-form {
+=======
+    .form_lai {
+        width: 100%;
+        margin: 150px 0 0 15px;
+    }
+    #name_lai, #email_lai, #number_lai,
+    #address_lai, #subject_lai, #message_lai,
+    #submit_lai {
+        width: 400px;
+        display: block;
+    }
+    .flex-form_lai {
+>>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
         display: block;
     }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
+<<<<<<< HEAD
     .form {
         width: 75%;
         margin: 150px 0 0 15px;
@@ -88,11 +109,25 @@ textarea {
         display: block;
     }
     .flex-form {
+=======
+    .form_lai {
+        width: 75%;
+        margin: 150px 0 0 15px;
+    }
+    #name_lai, #email_lai, #number_lai,
+    #address_lai, #subject_lai, #message_lai,
+    #submit_lai {
+        width: 450px;
+        display: block;
+    }
+    .flex-form_lai {
+>>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
         display: block;
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+<<<<<<< HEAD
     .form {
         width: 50%;
         margin: 150px 0 0 50px;
@@ -104,11 +139,25 @@ textarea {
         display: block;
     }
     .flex-form {
+=======
+    .form_lai {
+        width: 50%;
+        margin: 150px 0 0 50px;
+    }
+    #name_lai, #email_lai, #number_lai,
+    #address_lai, #subject_lai, #message_lai,
+    #submit_lai {
+        width: 450px;
+        display: block;
+    }
+    .flex-form_lai {
+>>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
         display: block;
     }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+<<<<<<< HEAD
     form {
         width: 50%;
         margin: 50px 0 0 0;
@@ -122,6 +171,19 @@ textarea {
         width: 400px;
     }
     .flex-form {
+=======
+    .form_lai {
+        width: 50%;
+    }
+    #name, #email, #number {
+        width: 200px;
+    }
+    #address_lai, #subject_lai, #message_lai,
+    #submit_lai {
+        width: 415px;
+    }
+    .flex-form_lai {
+>>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
         display: flex;
         column-gap: 20px;
     }
