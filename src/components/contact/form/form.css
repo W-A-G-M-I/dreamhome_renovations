@@ -115,12 +115,13 @@
     .form_lai {
         width: 50%;
     }
-    #name, #email, #number {
+    #name_lai, #email_lai, #number_lai {
         width: 200px;
+
     }
     #address_lai, #subject_lai, #message_lai,
     #submit_lai {
-        width: 415px;
+        width: 400px;
     }
     .flex-form_lai {
         display: flex;
