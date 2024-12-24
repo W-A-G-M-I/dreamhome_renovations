@@ -2,6 +2,7 @@
 .discuss {
     width: 50%;
     display: block;
+    margin-left: 50px;
 }
 
 /* Let's Discuss Your Next Project*/
@@ -31,3 +32,59 @@ span {
 .three, .four, .five {
     margin: 15px 0;
 }
+
+
+@media (max-width: 600px) {
+    .discuss {
+        width: 100%;
+        margin: 50px 0 0 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .discuss {
+        width: 75%;
+        margin: 50px 0 0 15px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .discuss {
+        width: 50%;
+        margin: 50px 0 0 50px;
+
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .discuss {
+        width: 50%;
+        margin: 50px 0 0 50px;
+
+    }
+}
+
+
+/* @media (max-width: 600px) {
+    .discuss {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .discuss {
+        width: 50%;
+    }
+    .header {
+        font-weight: bold;
+        font-size: 30px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@media (min-width: 1025px) {
+    .discuss {
+        width: 33.33%;
+    }
+} */

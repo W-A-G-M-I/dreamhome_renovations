@@ -1,6 +1,7 @@
 /* the second section which is the form part*/
 .form {
     width: 50%;
+    margin-left: 50px;
 }
 
 input {
@@ -21,7 +22,6 @@ input {
 /* This is to put the first name & Second name, email & phone on the same line (flex) */
 .flex-form {
     display: flex;
-    column-gap: 25px;
 }
 
 /* To increase size of border-bottom of name, subject & message */
@@ -54,3 +54,75 @@ textarea {
     color: #fff;
 }
 
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .form {
+        width: 100%;
+        margin: 150px 0 0 15px;
+    }
+    #name, #email, #number, 
+    #address, #subject, textarea,
+    #submit{
+        width: 400px;
+        display: block;
+    }
+    .flex-form {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .form {
+        width: 75%;
+        margin: 150px 0 0 15px;
+    }
+    #name, #email, #number, 
+    #address, #subject, textarea,
+    #submit{
+        width: 450px;
+        display: block;
+    }
+    .flex-form {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .form {
+        width: 50%;
+        margin: 150px 0 0 50px;
+    }
+    #name, #email, #number, 
+    #address, #subject, textarea,
+    #submit{
+        width: 450px;
+        display: block;
+    }
+    .flex-form {
+        display: block;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    form {
+        width: 50%;
+        margin: 50px 0 0 0;
+    }
+    #name, #email, #number {
+        width: 200px;
+
+    }
+    #address, #subject, textarea,
+    #submit {
+        width: 400px;
+    }
+    .flex-form {
+        display: flex;
+        column-gap: 20px;
+    }
+}

@@ -1,11 +1,34 @@
 * {
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 /* To flex "Discuss" and "Form" */
 .flex-box {
+    width: 90%;
     display: flex;
-    column-gap: 100px;
-    margin: 50px 60px;
+    column-gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .flex-box {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .flex-box {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .flex-box {
+        display: block;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .flex-box {
+        display: flex;
+    }
 }
