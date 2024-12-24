@@ -4,7 +4,7 @@ import Discuss from "../components/contact/discuss/Discuss";
 
 const Contact = () => {
   return (
-    <section className="flex">
+    <section className="flex_lai">
       <Discuss />
       <Form />
     </section>
