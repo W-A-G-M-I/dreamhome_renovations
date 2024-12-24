@@ -26,8 +26,8 @@
 .hero {
   height: 920px;
   width: 100%;
-  margin-top: 140px;
-  background-color: rgb(var(--color_36));
+  /* margin-top: 140px; */
+  /* background-color: rgb(var(--color_36)); */
   position: relative;
 }
 
@@ -36,7 +36,7 @@
   width: 90%;
   height: 860px;
   background-color: rgba(30, 30, 30, 0.6);
-  background-image: url(../assets/heroImage.png);
+  background-image: url(../../../assets/images/heroImage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -64,13 +64,13 @@
   align-items: center;
 }
 
-.semiBold {
+/* .semiBold {
   font-family: "poppinsSemiBold";
-}
+} */
 
-.extraLight {
+/* .extraLight {
   font-family: "poppinsExtraLight";
-}
+} */
 
 .c-15 {
   color: rgb(var(--color_15));

@@ -1,0 +1,56 @@
+/* the second section which is the form part*/
+.form {
+    width: 50%;
+}
+
+input {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* To increase size of border-bottom of name, email & number */
+#name, #email, #number {
+    width: 200px;
+}
+
+/* This is to put the first name & Second name, email & phone on the same line (flex) */
+.flex-form {
+    display: flex;
+    column-gap: 25px;
+}
+
+/* To increase size of border-bottom of name, subject & message */
+#address, #subject, textarea {
+    width: 425px;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    height: 65px;
+    padding: 0 8px;
+    outline: none;
+    resize: vertical;
+}
+
+/* the button */
+#submit {
+    background-color: #000;
+    color: white;
+    width: 425px;
+    height: 33px;
+    margin-top: 15px;
+    border: none;
+}
+
+#submit:hover {
+    background-color: rgb(126, 52, 9);
+    color: #fff;
+}
+
