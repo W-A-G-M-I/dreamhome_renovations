@@ -35,83 +35,30 @@
 
 
 @media (max-width: 600px) {
-<<<<<<< HEAD
-    .discuss {
-        width: 100%;
-        margin: 50px 0 0 15px;
-=======
     .discuss_lai {
         width: 100%;
         margin: 0 0 0 15px;
->>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
     }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
-<<<<<<< HEAD
-    .discuss {
-        width: 75%;
-        margin: 50px 0 0 15px;
-=======
     .discuss_lai {
         width: 75%;
         margin: 0 0 0 15px;
->>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
 
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-<<<<<<< HEAD
-    .discuss {
-        width: 50%;
-        margin: 50px 0 0 50px;
-=======
     .discuss_lai {
         width: 50%;
         margin: 0 0 0 50px;
->>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
-
     }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
-<<<<<<< HEAD
-    .discuss {
-        width: 50%;
-        margin: 50px 0 0 50px;
-
-    }
-}
-
-
-/* @media (max-width: 600px) {
-    .discuss {
-        width: 100%;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    .discuss {
-        width: 50%;
-    }
-    .header {
-        font-weight: bold;
-        font-size: 30px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-}
-
-@media (min-width: 1025px) {
-    .discuss {
-        width: 33.33%;
-    }
-} */
-=======
     .discuss_lai {
         width: 50%;
         margin: 0 0 0 50px;
-
     }
 }
->>>>>>> 218e0d149a3b982ea2081ab2e7d218f8564b1f16
