@@ -10,7 +10,9 @@ const InputField = ({
   inputStyle,
   inputContainerStyle,
   iconSrc,
-  value
+  value,
+  mustFill = true,
+  handleChange
 }) => {
   const displayInput = () => {
     switch (type) {
@@ -21,6 +23,7 @@ const InputField = ({
             className={inputStyle}
             placeholder={placeholder}
             value={value}
+            onChange={handleChange}
           />
         );
       default:
@@ -31,6 +34,7 @@ const InputField = ({
             className={inputStyle}
             name={name}
             value={value}
+            onInput={handleChange}
           />
         );
     }
@@ -39,7 +43,7 @@ const InputField = ({
     <div className={containerStyle}>
       {label && (
         <label htmlFor={name} className={labelStyle}>
-          {label}
+          {label} {mustFill && "*"}
         </label>
       )}
 

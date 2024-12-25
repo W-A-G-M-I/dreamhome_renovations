@@ -44,3 +44,15 @@ export const reviews = [
       "Dream House Renovations exceeded our expectations. They turned our outdated bathroom into a luxurious space. The craftsmanship and design expertise were top-notch!",
   },
 ];
+
+export const contactDetails = {
+  location: "No 3, Lekki Zone 9",
+  email: "dhr_info@official.com",
+  phone: "0700-000-7000",
+};
+
+
+export const contactTheme = {
+  light: "text-charcoal bg-white",
+  dark: "text-white bg-charcoal",
+};

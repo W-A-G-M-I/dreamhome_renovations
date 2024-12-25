@@ -10,7 +10,7 @@
   --color_8: 143, 143, 143;
   --color_9: 86, 86, 86;
   --color_10: 30, 30, 30;
-  --color_11: 245, 245, 245;
+  --color_11: rgb(245, 245, 245);
   --color_12: 219, 219, 219;
   --color_13: 143, 143, 143;
   --color_14: 86, 86, 86;
@@ -108,7 +108,7 @@
 } */
 
 .btn__menu {
-  @apply size-10 flex-apart flex-col absolute top-1/2 -translate-y-1/2 z-50 right-4 py-3 md:hidden;
+  @apply absolute z-50 flex-col py-3 -translate-y-1/2 size-10 flex-apart top-1/2 right-4 md:hidden;
 }
 
 .btn__stroke {
@@ -116,14 +116,13 @@
 }
 
 .btn__stroke--active {
-  @apply block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-7;
+  @apply absolute block -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-7;
 }
 
-
-
-* {
-  box-sizing: border-box;
+.padded {
+  @apply px-4 md:px-28
 }
+
 
 /* To flex "Discuss" and "Form" */
 .flex_lai {
