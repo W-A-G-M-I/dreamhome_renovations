@@ -20,7 +20,7 @@ const Form = ({ btnVariant }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="px-20 py-4 mt-6 md:mt-0 md:w-1/2">
+    <form onSubmit={handleSubmit} className="py-4 mt-6 md:px-20 md:mt-0 md:w-1/2">
       <InputField
         label="First Name"
         labelStyle="text-sm md:text-base"

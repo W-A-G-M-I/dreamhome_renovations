@@ -4,6 +4,9 @@ import quote from "../assets/icons/quote.svg";
 import x from "../assets/icons/x.svg";
 import pin from "../assets/icons/pin.svg";
 import send from "../assets/icons/send.svg";
+import twitterX from "../assets/icons/twitterX.svg";
+import facebook from "../assets/icons/facebook.svg";
+import youtube from "../assets/icons/youtube.svg";
 
 import heroImage from "../assets/images/heroImage.png";
 import interiorImage from "../assets/images/interiorImage.png";
@@ -11,7 +14,17 @@ import kitchenImage from "../assets/images/kitchenImage.png";
 import emphasisImage from "../assets/images/emphasisImage.png";
 import bedroomImage from "../assets/images/bedroomImage.png";
 
-export const icons = { messageBot, arrow, quote, x, pin, send };
+export const icons = {
+  messageBot,
+  arrow,
+  quote,
+  x,
+  pin,
+  send,
+  twitterX,
+  facebook,
+  youtube,
+};
 
 export const images = {
   heroImage,
@@ -51,8 +64,13 @@ export const contactDetails = {
   phone: "0700-000-7000",
 };
 
-
 export const contactTheme = {
   light: "text-charcoal bg-white",
   dark: "text-white bg-charcoal",
 };
+
+export const socialLinks = [
+  { title: "fb", icon: icons.facebook },
+  { title: "youtube", icon: icons.youtube },
+  { title: "x", icon: icons.twitterX },
+];
