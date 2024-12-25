@@ -1,14 +1,8 @@
 import React from "react";
-import Form from "../components/contact/form/Form";
-import Discuss from "../components/contact/discuss/Discuss";
+import ContactUs from "../components/home/ContactUs";
 
 const Contact = () => {
-  return (
-    <section className="flex_lai">
-      <Discuss />
-      <Form />
-    </section>
-  );
+  return <ContactUs />;
 };
 
 export default Contact;

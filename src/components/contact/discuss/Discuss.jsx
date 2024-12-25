@@ -1,18 +1,34 @@
 import React from "react";
 import "./discuss.css";
+import { TitleDesc } from "../../_common";
+import { contactDetails } from "../../../constants";
 
 const Discuss = () => {
-  return <div className="discuss_lai">
-    <header className="header_lai">Let's Discuss <span className="span_lai">Your Next Project</span></header>
-    <section className="section_lai">
-      <p className="p-one_lai">Fill out the form or call us to<span className="span_lai">set up a free in-home consultation</span></p>
-      <header className="service-areas_lai">Service Areas:</header>
-      <p className="p-two_lai">San Francisco, Santa Clara, Alameda, San Mateo</p>
-      <p className="p-three_lai">500 Terry Francine Street San </p>
-      <p className="p-four_lai">info@mysite.com</p>
-      <p className="p-five_lai">123-456-7890</p>
-    </section>
-  </div>;
+  const ourDetails = Object.values(contactDetails).map((detail) => detail);
+
+  return (
+    <div className="md:w-1/2 md:pr-20">
+      <TitleDesc
+      containerStyle=""
+        title="Let's Discuss Your Next Project"
+        desc="Fill out the form, or call us to set up a free in-home consultation"
+        titleStyle="text-2xl font-heading md:text-[40px] md:leading-snug"
+        descStyle="text-sm mt-1 md:mt-6 md:text-base"
+      />
+
+      <article className="mt-6">
+        <h3 className="font-bold md:text-xl">Service Areas: </h3>
+
+        <div className="flex flex-col mt-3 gap-y-2">
+          {ourDetails.map((detail, index) => (
+            <p key={index} className="text-xs md:text-base">
+              {detail}
+            </p>
+          ))}
+        </div>
+      </article>
+    </div>
+  );
 };
 
 export default Discuss;

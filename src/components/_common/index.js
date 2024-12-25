@@ -7,9 +7,11 @@ import MenuIcon from "./MenuIcon";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
 import TitleDesc from "./TitleDesc";
+import Btn from "./Btn";
 import InputField from "./InputField";
 
 export {
+  Btn,
   Header,
   Footer,
   Logo,
