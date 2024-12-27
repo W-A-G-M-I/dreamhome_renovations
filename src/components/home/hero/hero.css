@@ -26,8 +26,7 @@
 .hero {
   height: 920px;
   width: 100%;
-  /* margin-top: 140px; */
-  /* background-color: rgb(var(--color_36)); */
+  margin-top: 140px;
   position: relative;
 }
 
@@ -45,11 +44,11 @@
 }
 
 .hero .text {
-  width: 820px;
+  width: 60%;
   height: auto;
   position: relative;
   left: 60px;
-  transform: translate(0, 75%);
+  transform: translate(0, 60%);
 }
 
 .text a {
@@ -76,3 +75,32 @@
   color: rgb(var(--color_15));
 }
 
+@media (min-width: 760px) and (max-width: 1024px) {
+  .Header {
+    padding: 0 4rem;
+  }
+
+  .hero {
+    margin-top: 80px;
+  }
+  
+  .hero .image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero .text {
+    transform: translate(0, 50%);
+  }
+
+  .text .font-heading {
+    font-size: 62px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
