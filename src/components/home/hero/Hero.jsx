@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="hero">
       <div className="image">
         <div className="text">
-          <h1 className="font-heading text-[72px] text-faint mb-[70px]">
+          <h1 className="font-heading xl:text-[72px] lg:text-[62px] md:text-[62px] mobile:text-[28px] mobile:text-center text-faint xl:mb-[70px] lg:mb-[70px] md:mb-[70px] sm:mb-[10px] mobile:mb-[10px]">
             Exceptional Home Remodeling & Renovations
           </h1>
 
