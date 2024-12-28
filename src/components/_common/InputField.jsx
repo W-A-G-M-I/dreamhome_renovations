@@ -35,6 +35,7 @@ const InputField = ({
             name={name}
             value={value}
             onInput={handleChange}
+            required
           />
         );
     }

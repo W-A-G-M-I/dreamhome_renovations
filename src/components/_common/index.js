@@ -10,11 +10,13 @@ import MenuIcon from "./MenuIcon";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
 import TitleDesc from "./TitleDesc";
+import ChatBotHeader from "./ChatBotHeader";
 
 export {
   Btn,
   ChatBot,
   ChatBox,
+  ChatBotHeader,
   Footer,
   Header,
   IconWrapper,

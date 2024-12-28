@@ -4,6 +4,8 @@ import { useToggle } from "../../hooks/useToggle";
 import TitleDesc from "./TitleDesc";
 import InputField from "./InputField";
 import ChatBox from "./ChatBox";
+import ChatBotHeader from "./ChatBotHeader";
+import ChatBotForm from "./ChatBotForm";
 
 const ChatBot = () => {
   const { isToggle: isChatBoardOpen, toggleOff, toggleOn } = useToggle();
@@ -20,19 +22,8 @@ const ChatBot = () => {
 
       {isChatBoardOpen && (
         <div className="fixed bottom-0 md:bottom-0 right-0 md:right-10 z-50 flex flex-col items-stretch w-full md:w-[340px] h-screen bg-white md:h-[500px] md:shadow-lg">
-          <header className="h-[70px] pl-5 pr-3 flex-apart">
-            <TitleDesc
-              containerStyle=""
-              titleStyle="text-lg font-heading"
-              descStyle="text-sm"
-              title="DH Renovations"
-              desc="We will reply as soon as possible"
-            />
-
-            <button onClick={toggleOff}>
-              <img src={icons.x} alt="close" />
-            </button>
-          </header>
+          <ChatBotForm />
+          <ChatBotHeader toggleOff={toggleOff} />
           <ChatBox />
           <InputField
             type="textarea"

@@ -123,6 +123,9 @@
   @apply px-4 md:px-28
 }
 
+.header-fixed {
+  @apply fixed w-full z-50 left-0 top-0
+}
 
 /* To flex "Discuss" and "Form" */
 .flex_lai {
