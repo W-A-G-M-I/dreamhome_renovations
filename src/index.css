@@ -72,24 +72,16 @@
 @tailwind utilities;
 
 @layer base {
-  /* @font-face {
-    font-family: "pop-bold";
-    src: url("./assets/fonts/Poppins-Bold.ttf");
-  } */
   @font-face {
     font-family: "pop-light";
-    src: url("./assets/fonts/Poppins-ExtraLight.ttf");
+    src: url("./assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
   }
-  /* @font-face {
-    font-family: "pop-regular";
-    src: url("./assets/fonts/Poppins-Regular.ttf");
-  } */
   @font-face {
     font-family: "pop-semibold";
-    src: url("./assets/fonts/Poppins-SemiBold.ttf");
+    src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
   }
   body {
-    @apply bg-faint
+    background-color: white
   }
 }
 
@@ -100,6 +92,10 @@
 
   .flex-apart {
     @apply flex items-center justify-between;
+  }
+
+  .padded {
+    @apply px-4 md:px-28;
   }
 }
 
@@ -119,16 +115,12 @@
   @apply absolute block -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-7;
 }
 
-.padded {
-  @apply px-4 md:px-28
-}
-
 .header-fixed {
-  @apply fixed w-full z-50 left-0 top-0 bg-white
+  @apply fixed w-full z-50 left-0 top-0 bg-white;
 }
 
 .header-static {
-  @apply relative
+  @apply relative;
 }
 
 /* To flex "Discuss" and "Form" */
@@ -141,24 +133,24 @@
 
 @media (max-width: 600px) {
   .flex_lai {
-      display: block;
+    display: block;
   }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
   .flex_lai {
-      display: block;
+    display: block;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .flex_lai {
-      display: block;
+    display: block;
   }
 }
 
-@media (min-width: 993px) and (max-width: 1200px)  {
+@media (min-width: 993px) and (max-width: 1200px) {
   .flex_lai {
-      display: flex;
+    display: flex;
   }
 }

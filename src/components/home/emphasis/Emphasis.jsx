@@ -1,30 +1,29 @@
-import React from "react";
 import "./emphasis.css";
+import { Btn, TitleDesc } from "../../_common";
 
 const Emphasis = () => {
   return (
-    <div className="w-[100%] h-[680px] bg-faint">
-      <div className="mx-[auto] my-[0] w-[90%] h-[inherit] flex">
-        <div className="image h-[inherit] w-[50%] bg-[rgba(143,143,143,0.6)] bg-cover bg-top bg-fixed bg-blend-multiply" />
+    <section className="py-10 md:py-20 md:padded">
+      <div className="flex flex-col items-center mx-auto md:flex-row">
+        <div className="image h-[300px] w-full  md:w-1/2 bg-[rgba(143,143,143,0.6)] bg-cover bg-top bg-fixed bg-blend-multiply order-last md:order-none border" />
 
-        <div className="h-[inherit] w-[50%] flex justify-center items-center">
-          <article className="w-[75%] h-[310px] flex flex-col justify-between">
-            <h2 className="font-heading text-[40px] text-charcoal">
-              The Leading Bay Area Remodeling Company
-            </h2>
-            <p className="text-[15px] text-charcoal">
-              I'm a paragraph. Click here to add your own text and edit me. It’s
+        <article className="flex-col w-full p-5 pb-10 flex-center md:w-1/2">
+          <TitleDesc
+            title="The Leading Bay Area Remodeling Compoany"
+            desc=" I'm a paragraph. Click here to add your own text and edit me. It’s
               easy. Just click “Edit Text” or double click me to add your own
-              content and make changes to the font.
-            </p>
-            
-            <button className="w-[160px] h-[40px] bg-[rgb(30,30,30)] text-[14px] text-[rgb(245,245,245)] hover:bg-[rgb(162,96,40)]">
-              More About Us
-            </button>
-          </article>
-        </div>
+              content and make changes to the font."
+            titleStyle="font-heading md:text-3xl text-2xl text-charcoal"
+            descStyle="text-sm mt-3"
+          />
+
+          <Btn
+            text="More About Us"
+            containerStyle="text-sm flex-center h-10 w-[160px] mt-6 self-start"
+          />
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

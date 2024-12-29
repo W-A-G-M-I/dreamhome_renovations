@@ -7,14 +7,16 @@ import Customer from "../components/home/customer/Customer";
 import ContactUs from "../components/home/ContactUs";
 
 const Home = () => {
-  return <section>
-    <Hero />
-    <Emphasis />
-    <Reason />
-    <Services />
-    <Customer />
-    <ContactUs theme="dark" />
-  </section>;
+  return (
+    <>
+      <Hero />
+      <Emphasis />
+      <Reason />
+      <Services />
+      <Customer />
+      <ContactUs theme="dark" />
+    </>
+  );
 };
 
 export default Home;

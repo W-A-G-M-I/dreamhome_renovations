@@ -50,18 +50,18 @@ export const navLinks = [
 
 export const reviews = [
   {
-    customerName: "Sarah Johnson",
-    customerReview:
+    name: "Sarah Johnson",
+    review:
       "The renovation team was incredible! Our kitchen looks amazing and the whole process was smooth and stress-free. Highly recommend their services!",
   },
   {
-    customerName: "Michael Brown",
-    customerReview:
+    name: "Michael Brown",
+    review:
       "I'm thrilled with the results of our home extension. The team was professional, punctual, and their attention to detail was outstanding. Our home feels brand new!",
   },
   {
-    customerName: "Emily Davis",
-    customerReview:
+    name: "Emily Davis",
+    review:
       "Dream House Renovations exceeded our expectations. They turned our outdated bathroom into a luxurious space. The craftsmanship and design expertise were top-notch!",
   },
 ];
@@ -113,5 +113,32 @@ export const ourProcessSteps = [
     imageSrc: images.process4,
     summary:
       "We conduct a thorough walkthrough to ensure your complete satisfaction before delivering the beautifully renovated space.",
+  },
+];
+
+export const reasons = [
+  {
+    title1: "Expert",
+    title2: "Craftsmanship",
+    description:
+      "Our team of skilled professionals brings years of experience and dedication to each project, ensuring the highest quality workmanship.",
+  },
+  {
+    title1: "Personalized",
+    title2: "Design",
+    description:
+      "We believe in creating spaces that reflect your unique style and needs.",
+  },
+  {
+    title1: "Transparent",
+    title2: "Process",
+    description:
+      "From the initial consultation to the final walkthrough, we maintain open communication and transparency.",
+  },
+  {
+    title1: "Customer",
+    title2: "Satisfaction",
+    description:
+      "Your satisfaction is our top priority. We stand behind our work with a comprehensive guarantee, and we’re committed to making sure you are completely happy with the results.",
   },
 ];
