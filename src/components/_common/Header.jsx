@@ -1,10 +1,28 @@
 import Logo from "./Logo";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [isStaticHeader, setStaticHeader] = useState(true);
+  useEffect(() => {
+    const handleWindowScroll = (e) => {
+      const pageY = e.currentTarget.scrollY;
+      pageY > 300 ? setStaticHeader(false) : setStaticHeader(true);
+    };
+    window.addEventListener("scroll", handleWindowScroll);
+
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   return (
-    <header className="relative h-20 padded flex-apart">
+    <header
+      className={`h-20 padded flex-apart ${
+        isStaticHeader ? "header-static" : "header-fixed"
+      }`}
+    >
       <div className="flex items-end">
         <Logo containerStyle="w-9 h-8" />
         <h1 className="text-xl font-heading ms-1 text-charcoal">

@@ -9,7 +9,7 @@ const Nav = ({ menuStyle, menuListStyle, menuListItemStyle, setShowOff }) => {
     <nav className={menuStyle}>
       <ul className={menuListStyle}>
         {navLinks.map(({ title, href }) => (
-          <li className={menuListItemStyle} onClick={setShowOff}>
+          <li className={menuListItemStyle} onClick={setShowOff} key={title}>
             <Link to={href}>{title}</Link>
           </li>
         ))}

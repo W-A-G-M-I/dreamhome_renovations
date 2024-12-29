@@ -124,7 +124,11 @@
 }
 
 .header-fixed {
-  @apply fixed w-full z-50 left-0 top-0
+  @apply fixed w-full z-50 left-0 top-0 bg-white
+}
+
+.header-static {
+  @apply relative
 }
 
 /* To flex "Discuss" and "Form" */

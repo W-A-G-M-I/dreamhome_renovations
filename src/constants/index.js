@@ -13,6 +13,10 @@ import interiorImage from "../assets/images/interiorImage.png";
 import kitchenImage from "../assets/images/kitchenImage.png";
 import emphasisImage from "../assets/images/emphasisImage.png";
 import bedroomImage from "../assets/images/bedroomImage.png";
+import process1 from "../assets/images/process1.jpg";
+import process2 from "../assets/images/process2.jpg";
+import process3 from "../assets/images/process3.jpg";
+import process4 from "../assets/images/process4.jpg";
 
 export const icons = {
   messageBot,
@@ -32,6 +36,10 @@ export const images = {
   kitchenImage,
   emphasisImage,
   bedroomImage,
+  process1,
+  process2,
+  process3,
+  process4,
 };
 
 export const navLinks = [
@@ -73,4 +81,37 @@ export const socialLinks = [
   { title: "fb", icon: icons.facebook },
   { title: "youtube", icon: icons.youtube },
   { title: "x", icon: icons.twitterX },
+];
+
+export const aboutText =
+  "Dream Home Renovations, where your vision becomes reality. We are passionate about transforming spaces and creating stunning homes that reflect your style and needs.";
+
+export const ourProcess =
+  "At Dream Home Renovations, we prioritize a seamless experience for our clients. Our process begins with an in-depth consultation to understand your vision and needs.";
+
+export const ourProcessSteps = [
+  {
+    title: "Initial Consultation",
+    imageSrc: images.process1,
+    summary:
+      "We begin with an in-depth consultation to understand your vision and needs.",
+  },
+  {
+    title: "Design and Planning",
+    imageSrc: images.process2,
+    summary:
+      "Our design team collaborates with you to create detailed plans and visualizations.",
+  },
+  {
+    title: "Construction and Quality Assurance",
+    imageSrc: images.process3,
+    summary:
+      "Our skilled team executes the renovation with precision, maintaining high-quality standards throughout the process.",
+  },
+  {
+    title: "Final Walkthrough and Handover",
+    imageSrc: images.process4,
+    summary:
+      "We conduct a thorough walkthrough to ensure your complete satisfaction before delivering the beautifully renovated space.",
+  },
 ];
