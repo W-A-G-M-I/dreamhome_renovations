@@ -20,7 +20,7 @@ const Footer = () => {
         <span className="block md:inline">© 2024 by Renovation Team.</span>
         <span>
           Powered and secured by{" "}
-          <span className="underline font-heading">Group 2</span>
+          <span className="underline font-heading">DHR Team</span>
         </span>
       </p>
     </footer>
