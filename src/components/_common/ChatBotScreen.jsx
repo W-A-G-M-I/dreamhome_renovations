@@ -4,6 +4,7 @@ import ChatBox from "./ChatBox";
 import Chat from "./Chat";
 import { icons } from "../../constants";
 import InputField from "./InputField";
+import sendMail from "../../services/sendemail";
 
 const ChatBotScreen = ({
   toggleOff,
@@ -31,14 +32,19 @@ const ChatBotScreen = ({
     }
 
     if (numberOfMessages === 4) {
-      setTimeout(() => {
-        noMoreFirstRender();
-      }, 3000);
+      const name = messages[1].msg;
+      const email = messages[3].msg;
+      (async () => {
+        await sendMail({ name, email }, "/send-mail/bot");
+        setTimeout(() => {
+          noMoreFirstRender();
+        }, 3000);
+      })();
     }
   }, [messages]);
 
   if (!isChatBoardOpen) return null;
-  
+
   return (
     <div className="fixed top-0 md:top-[80px] right-0 md:right-10 z-50 flex flex-col items-stretch w-full md:w-[340px] h-screen bg-white md:h-[500px] md:shadow-lg">
       <ChatBotHeader
@@ -60,7 +66,7 @@ const ChatBotScreen = ({
         inputStyle="flex-1 px-2 resize-none h-7 pt-1 border"
         placeholder="Type Your Message"
         value={userInput}
-        iconSrc={icons.x}
+        iconSrc={icons.send}
         handleChange={(e) => setUserInput(e.currentTarget.value)}
         handleBtnClick={handleBtnClick}
       />

@@ -15,7 +15,7 @@ const ChatBot = () => {
         className="fixed border rounded-full size-10 md:size-12 bg-tea flex-center bottom-5 right-5 md:right-12 md:bottom-6"
         onClick={toggleOn}
       >
-        <img src={icons.messageBot} alt="message" className="size-6" />
+        <img src={icons.bot} alt="message" className="size-6" />
       </button>
 
       {isFirstRender ? (

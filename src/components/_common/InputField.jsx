@@ -52,7 +52,7 @@ const InputField = ({
       <div className={inputContainerStyle}>
         {displayInput()}
         {iconSrc && (
-          <button onClick={handleBtnClick}>
+          <button onClick={handleBtnClick} className="shadow-lg size-6">
             <img src={iconSrc} alt="input icon" />
           </button>
         )}

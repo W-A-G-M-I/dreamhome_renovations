@@ -7,6 +7,7 @@ import send from "../assets/icons/send.svg";
 import twitterX from "../assets/icons/twitterX.svg";
 import facebook from "../assets/icons/facebook.svg";
 import youtube from "../assets/icons/youtube.svg";
+import bot from "../assets/icons/bot.svg";
 
 import heroImage from "../assets/images/heroImage.png";
 import interiorImage from "../assets/images/interiorImage.png";
@@ -28,6 +29,7 @@ export const icons = {
   twitterX,
   facebook,
   youtube,
+  bot,
 };
 
 export const images = {

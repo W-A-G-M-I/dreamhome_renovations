@@ -17,7 +17,9 @@ const FirstChatBotScreen = ({
   ]);
 
   const handleBtnClick = () => {
+    if (!userInput) return;
     setMessages((prev) => [...prev, { msg: userInput, user: "default" }]);
+    setUserInput("");
   };
 
   return (

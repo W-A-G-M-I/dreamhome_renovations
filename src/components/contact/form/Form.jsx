@@ -18,11 +18,18 @@ const Form = ({ btnVariant }) => {
     setContactFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    sendMail(contactFormData);
+    await sendMail(contactFormData);
+    setContactFormData({
+      firstname: "",
+      lastname: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
   };
+  
   return (
     <form
       onSubmit={handleSubmit}
@@ -87,7 +94,7 @@ const Form = ({ btnVariant }) => {
       />
 
       <Btn
-        text={ "Submit"}
+        text={"Submit"}
         variant={btnVariant}
         containerStyle="w-full h-10 mt-3 text-sm"
         // disabled={isLoading}

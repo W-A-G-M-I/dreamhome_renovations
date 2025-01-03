@@ -7,8 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        // target: "https://dreamhome-backend.onrender.com",
-        target: "http://localhost:3000",
+        target: "https://dreamhome-backend.onrender.com/api/v1",
+        // target: "http://localhost:3000/api/v1",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },

@@ -17,6 +17,7 @@ function CenteredText() {
           src={image}
           alt="Sample Image"
           className="w-full max-w-full h-187"
+          loading="lazy"
         />
       </div>
     </section>
