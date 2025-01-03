@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const ChatBox = () => {
-  return (
-    <div className='flex-1 p-5 bg-faint'>ChatBox</div>
-  )
-}
+const ChatBox = ({ children }) => {
+  return <div className="flex-1 px-3 py-2 bg-faint">{children}</div>;
+};
 
-export default ChatBox
+export default ChatBox;

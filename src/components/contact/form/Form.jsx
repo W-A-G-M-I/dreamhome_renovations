@@ -1,29 +1,31 @@
-import React from "react";
 import "./form.css";
 import { InputField, Btn } from "../../_common";
-import { useFormData } from "../../../hooks/useFormData";
+import sendMail from "../../../services/sendemail";
+import { useState } from "react";
 
 const Form = ({ btnVariant }) => {
-  const {
-    isLoading,
-    formData,
-    handleFormSubmit,
-    handleFormDataChange,
-    areInputsFilled,
-  } = useFormData({
-    customFormData: {
-      firstname: "",
-      lastname: "",
-      phone: "",
-      subject: "",
-      message: "",
-    },
-    formKey: "xgvvzvoy",
+  const [contactFormData, setContactFormData] = useState({
+    firstname: "",
+    lastname: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
+  const handleChange = (e) => {
+    const name = e.currentTarget.name;
+    const value = e.currentTarget.value;
+    setContactFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    sendMail(contactFormData);
+  };
   return (
     <form
-      onSubmit={handleFormSubmit}
+      onSubmit={handleSubmit}
       className="py-4 mt-6 md:px-20 md:mt-0 md:w-1/2"
     >
       <InputField
@@ -32,8 +34,8 @@ const Form = ({ btnVariant }) => {
         name="firstname"
         inputContainerStyle="mt-1"
         inputStyle="w-full bg-transparent border-b outline-none px-3"
-        value={formData.firstname}
-        handleChange={handleFormDataChange}
+        value={contactFormData.firstname}
+        handleChange={handleChange}
       />
 
       <InputField
@@ -43,8 +45,8 @@ const Form = ({ btnVariant }) => {
         name="lastname"
         inputContainerStyle="mt-1"
         inputStyle="w-full bg-transparent border-b outline-none px-3"
-        value={formData.lastname}
-        handleChange={handleFormDataChange}
+        value={contactFormData.lastname}
+        handleChange={handleChange}
       />
 
       <InputField
@@ -55,8 +57,8 @@ const Form = ({ btnVariant }) => {
         inputContainerStyle="mt-1"
         inputStyle="w-full bg-transparent border-b outline-none px-3"
         mustFill={false}
-        value={formData.phone}
-        handleChange={handleFormDataChange}
+        value={contactFormData.phone}
+        handleChange={handleChange}
       />
 
       <InputField
@@ -67,8 +69,8 @@ const Form = ({ btnVariant }) => {
         inputContainerStyle="mt-1"
         inputStyle="w-full bg-transparent border-b outline-none px-3"
         mustFill={false}
-        value={formData.subject}
-        handleChange={handleFormDataChange}
+        value={contactFormData.subject}
+        handleChange={handleChange}
       />
 
       <InputField
@@ -80,15 +82,15 @@ const Form = ({ btnVariant }) => {
         inputContainerStyle="mt-1"
         inputStyle="w-full bg-transparent border-b outline-none px-3 h-20 resize-none"
         mustFill={false}
-        value={formData.message}
-        handleChange={handleFormDataChange}
+        value={contactFormData.message}
+        handleChange={handleChange}
       />
 
       <Btn
-        text={isLoading ? "Submitting" : "Submit"}
+        text={ "Submit"}
         variant={btnVariant}
         containerStyle="w-full h-10 mt-3 text-sm"
-        disabled={isLoading}
+        // disabled={isLoading}
       />
     </form>
   );

@@ -12,7 +12,8 @@ const InputField = ({
   iconSrc,
   value,
   mustFill = true,
-  handleChange
+  handleChange,
+  handleBtnClick,
 }) => {
   const displayInput = () => {
     switch (type) {
@@ -51,7 +52,7 @@ const InputField = ({
       <div className={inputContainerStyle}>
         {displayInput()}
         {iconSrc && (
-          <button>
+          <button onClick={handleBtnClick}>
             <img src={iconSrc} alt="input icon" />
           </button>
         )}
